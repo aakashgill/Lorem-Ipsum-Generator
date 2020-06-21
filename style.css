@@ -1,0 +1,138 @@
+:root {
+  --backgroundColor : #fff;
+  --color: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  padding: 50px 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  background: var(--backgroundColor);
+  color: var(--color);
+}
+.dark-theme {
+  --backgroundColor : #000;
+  --color: #fff;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+fieldset {
+  border: 0;
+  margin: 10px 5px;
+}
+.form-field {
+  margin: 10px 5px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+input {
+  margin: 0 4px;
+  border: 1px solid #d9dde1;
+  border-radius: 3px;
+  color: #424852;
+  padding: 4px;
+  font-weight: 500;
+  box-sizing: border-box;
+  background-color: #f5f9fe;
+  font-size: 14px;
+  appearance: none;
+}
+input[type="number"] {
+  width: 100px;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+.btn {
+  font-size: 14px;
+  background: #a05598;
+  color: #fff;
+  border: 1px solid #91508b;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 30px;
+  display: inline-flex;
+  align-items: center;
+}
+svg {
+  margin-left: 5px;
+}
+
+.btn:hover {
+  background: #91508b;
+}
+
+.copied {
+  background: grey;
+  padding: 4px;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  transition: all .4s ease;
+  opacity: 0;
+}
+.copied::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border: 8px solid transparent;
+  border-right-color: grey;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+.results p {
+  width: 100%;
+  padding: 20px;
+  margin: 4px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (min-width: 600px) {
+  .results p {
+    width: calc(50% - 10px);
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .results p {
+    width: calc(33.333% - 10px);
+    padding: 20px;
+  }
+}
+
+.toggle-theme {
+  text-align: center;
+}

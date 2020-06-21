@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Ipsum Generator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="toggle-theme">
+    <label>
+      Dark Theme
+      <input type="checkbox">
+    </label>
+  </div>
+  <h1>Lorem Ipsum Generator</h1>
+  <form class="form">
+    <fieldset>You can choose various languages</fieldset>
+    <div class="flex">
+      <div class="form-field">
+        <label>
+          <input type="radio" name="language" value="latin" checked>
+          Latin
+        </label>
+      </div>
+      <div class="form-field">
+        <label>
+          <input type="radio" name="language" value="english">
+          English
+        </label>
+      </div>
+      <div class="form-field">
+        <label>
+          <input type="radio" name="language" value="hindi">
+          Hindi
+        </label>
+      </div>
+    </div>
+    <div class="form-field">
+      <label>How many paragraphs do you want?
+        <input type="number" value="2" placeholder="Enter number" name="paragraphs">
+      </label>
+    </div>
+    <div class="form-field">
+      <label>Starts with Lorem Ipsum?
+        <input type="checkbox" name="isLorem">
+      </label>
+    </div>
+    <div class="form-field">
+      <button class="btn" type="submit">Generate</button>
+      <button id="copy" class="btn btn-copy" type="button">Copy
+        <svg width="16" height="16"><defs><path id="a" d="M6 0h1.997L10 2l2 2.073V6H6z"/><path d="M0 1c0-.552.453-1 .997-1h7L8 2.99c0 .558.444 1.018 1.01 1.029L12 4.073v10.93c0 .55-.456.997-1.002.997H1.002A1 1 0 010 15V1z" id="b"/><path id="c" d="M6 0h1.997L10 2l2 2.073V6H6z"/><path d="M0 1c0-.552.453-1 .997-1h7L8 2.99c0 .558.444 1.018 1.01 1.029L12 4.073v10.93c0 .55-.456.997-1.002.997H1.002A1 1 0 010 15V1z" id="d"/></defs><g fill="none" fill-rule="evenodd"><path fill="#a05598" d="M0 0h16v20H0z"/><g transform="translate(4)"><use fill="#F4F6F8" xlink:href="#a"/><path stroke="#a05598" d="M6.5.5h1.29l1.857 1.854L11.5 4.275V5.5h-5v-5z"/></g><g transform="translate(4)"><use fill="#F4F6F8" xlink:href="#b"/><path stroke="#a05598" d="M7.498.5l.001 2.491c0 .832.665 1.512 1.501 1.527l2.5.046v10.44c0 .27-.228.496-.502.496H1.002A.5.5 0 01.5 15V1C.5.728.727.5.997.5h6.5z"/></g><g><g transform="translate(0 4)"><use fill="#F4F6F8" xlink:href="#c"/><path stroke="#a05598" d="M6.5.5h1.29l1.857 1.854L11.5 4.275V5.5h-5v-5z"/></g><g transform="translate(0 4)"><use fill="#F4F6F8" xlink:href="#d"/><path stroke="#a05598" d="M7.498.5l.001 2.491c0 .832.665 1.512 1.501 1.527l2.5.046v10.44c0 .27-.228.496-.502.496H1.002A.5.5 0 01.5 15V1C.5.728.727.5.997.5h6.5z"/></g></g></g></svg>
+      </button>
+      <span class="copied">Copied</span>
+    </div>
+  </form>
+  <div class="container">
+    <div class="results"></div>
+  </div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
